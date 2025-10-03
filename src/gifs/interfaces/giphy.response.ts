@@ -12,7 +12,6 @@ export interface GiphyGif {
     bitly_gif_url: string;
     bitly_url: string;
     embed_url: string;
-    username: Username;
     source: string;
     title: string;
     rating: Rating;
@@ -100,30 +99,25 @@ export interface Looping {
     mp4: string;
 }
 
-export enum Rating {
-    G = "g",
-    PG = "pg",
+export type Rating = 'G' | 'PG';
+
+export type SourceTLD = {
+    Empty: "",
+    WWWCrunchyrollCOM: "www.crunchyroll.com",
 }
 
-export enum SourceTLD {
-    Empty = "",
-    WWWCrunchyrollCOM = "www.crunchyroll.com",
+
+export type TrendingDatetime = {
+    The00000000000000: "0000-00-00 00:00:00",
 }
 
-export enum TrendingDatetime {
-    The00000000000000 = "0000-00-00 00:00:00",
-}
-
-export enum Type {
-    GIF = "gif",
-}
+export type Type = 'gif';
 
 export interface User {
     avatar_url: string;
     banner_image: string;
     banner_url: string;
     profile_url: string;
-    username: Username;
     display_name: DisplayName;
     description: string;
     instagram_url: string;
@@ -131,14 +125,9 @@ export interface User {
     is_verified: boolean;
 }
 
-export enum DisplayName {
-    BandaiNamco = "BANDAI NAMCO",
-    Crunchyroll = "Crunchyroll",
-}
-
-export enum Username {
-    Bandainamco = "bandainamco",
-    Crunchyroll = "crunchyroll",
+export type DisplayName = {
+    BandaiNamco: "BANDAI NAMCO",
+    Crunchyroll: "Crunchyroll",
 }
 
 export interface Meta {
