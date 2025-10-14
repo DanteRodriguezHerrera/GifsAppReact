@@ -1,5 +1,5 @@
 You can check the final result here
-[text](https://heartfelt-crepe-732171.netlify.app)
+[here](https://heartfelt-crepe-732171.netlify.app)
 
 # React + TypeScript + Vite
 
